@@ -37,6 +37,35 @@ p {
   font-size: 15px;
 }
 
+p input {
+  margin-right: 10px;
+  border: none;
+  background: transparent;
+}
+
+p input[type="checkbox"] {
+  width: 15px;
+  display: inline-block;
+  margin: 0;
+}
+
+p input[type="checkbox"]:hover {
+  transform: scale(1.5);
+}
+
+p input[type="text"] {
+  width: calc(100% - 15px - 10px);
+  display: inline-block;
+  margin: 0;
+  padding-left: 5px;
+}
+
+p span {
+  margin: 0;
+  width: 10px;
+  display: inline-block;
+}
+
 .bottom-border:not(:last-of-type) p:last-of-type {
   border-bottom: 1px solid #b1b1b1;
   padding-bottom: 5px;
