@@ -38,7 +38,6 @@ p {
 }
 
 p input {
-  margin-right: 10px;
   border: none;
   background: transparent;
 }
@@ -66,20 +65,41 @@ p span {
   display: inline-block;
 }
 
-.bottom-border:not(:last-of-type) p:last-of-type {
+div > span {
+  margin-right: 8px;
+  margin-left: 3px;
+}
+
+.addNewItem {
+  font-size: 0;
+}
+
+.addNewItem * {
+  font-size: 15px;
+}
+
+.addNewItem > input {
+  background-color: transparent;
+  border: 1px solid lightgray;
+  font-size: 13px;
+  padding-left: 5px;
+  width: calc(100% - 20px);
+}
+
+/* .bottom-border:not(:last-of-type) div:last-of-type {
   border-bottom: 1px solid #b1b1b1;
   padding-bottom: 5px;
-}
+} */
 
 @media (min-width: 576px) {
   .row {
-    max-width: 550px;
+    /* max-width: 550px; */
     margin: 0 auto 50px auto;
   }
 }
 
 @media (min-width: 746px) {
   .container {
-    max-width: 650px;
+    /* max-width: 650px; */
   }
 }
